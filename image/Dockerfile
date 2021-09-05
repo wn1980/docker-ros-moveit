@@ -33,6 +33,8 @@ RUN apt-get install -y \
     ros-${ROS_DISTRO}-robot-state-publisher \
     ros-${ROS_DISTRO}-joint-state-publisher \
     ros-${ROS_DISTRO}-joint-state-publisher-gui \
+    ros-${ROS_DISTRO}-gazebo-ros-pkgs \
+    ros-${ROS_DISTRO}-gazebo-ros-control \
     #ros-${ROS_DISTRO}-linux-peripheral-interfaces \
     #ros-${ROS_DISTRO}-diagnostics \
     #ros-${ROS_DISTRO}-navigation \
