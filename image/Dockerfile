@@ -26,7 +26,7 @@ RUN apt-get install -y \
 RUN sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list' && \
     curl -L http://packages.osrfoundation.org/gazebo.key | apt-key add -
 
-RUN apt-get update && apt-get upgrade -y
+RUN apt-get update --fix-missing && apt-get upgrade -y
 RUN apt-get install -y \
     #ros-${ROS_DISTRO}-desktop-full \
     ros-${ROS_DISTRO}-moveit \
