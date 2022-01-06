@@ -1,5 +1,5 @@
-#FROM ros:noetic-ros-core-focal
-FROM ros:melodic-ros-core-bionic
+FROM ros:noetic-ros-core-focal
+#FROM ros:melodic-ros-core-bionic
 
 LABEL maintainer="Waipot Ngamsaad <waipotn@hotmail.com>"
 
@@ -43,8 +43,8 @@ RUN apt-get install -y \
     #ros-${ROS_DISTRO}-hector-slam \
     #ros-${ROS_DISTRO}-octomap-server \
     #ros-${ROS_DISTRO}-octomap-rviz-plugins \
-    python-catkin-tools \
-    python-rosdep && \
+    python3-catkin-tools \
+    python3-rosdep && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -70,7 +70,7 @@ RUN apt-get install -y \
     tigervnc-standalone-server \
     #tigervnc-xorg-extension \
     #python-is-python3 \
-    python-pip && \
+    python3-pip && \
     pip install -U --no-cache-dir supervisor supervisor_twiddler && \
     apt-get autoremove -y && \
     apt-get clean && \

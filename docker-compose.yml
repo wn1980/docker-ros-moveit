@@ -36,5 +36,5 @@ services:
       interval: "1m"
       retries: 20
     ports:
-      - "8559:8558"
+      - "8559:8008"
       - "9904:9901"
