@@ -26,6 +26,7 @@ services:
       - "/run/systemd:/run/systemd"
       - "/etc/localtime:/etc/localtime:ro"
       #- "workspace:/workspace"
+      - "~/.gitconfig:/home/developer/.gitconfig"
     healthcheck:
       test: ["CMD-SHELL", "test -e /tmp/.X11-unix/X9"]
       interval: "1m"
