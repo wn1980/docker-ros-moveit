@@ -37,14 +37,10 @@ RUN apt-get install -y \
     ros-${ROS_DISTRO}-gazebo-ros-control \
     ros-${ROS_DISTRO}-ros-control \
     ros-${ROS_DISTRO}-ros-controllers \
+    ros-${ROS_DISTRO}-rqt \
+    ros-${ROS_DISTRO}-rqt-common-plugins \
     ros-${ROS_DISTRO}-urdf-tutorial \
     ros-${ROS_DISTRO}-catkin \
-    #ros-${ROS_DISTRO}-linux-peripheral-interfaces \
-    #ros-${ROS_DISTRO}-diagnostics \
-    #ros-${ROS_DISTRO}-navigation \
-    #ros-${ROS_DISTRO}-hector-slam \
-    #ros-${ROS_DISTRO}-octomap-server \
-    #ros-${ROS_DISTRO}-octomap-rviz-plugins \
     python3-catkin-tools \
     python3-rosdep && \
     apt-get autoremove -y && \
