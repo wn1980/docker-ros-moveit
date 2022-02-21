@@ -35,6 +35,8 @@ RUN apt-get install -y \
     ros-${ROS_DISTRO}-joint-state-publisher-gui \
     ros-${ROS_DISTRO}-gazebo-ros-pkgs \
     ros-${ROS_DISTRO}-gazebo-ros-control \
+    ros-${ROS_DISTRO}-ros-control \
+    ros-${ROS_DISTRO}-ros-controllers \
     ros-${ROS_DISTRO}-urdf-tutorial \
     ros-${ROS_DISTRO}-catkin \
     #ros-${ROS_DISTRO}-linux-peripheral-interfaces \
@@ -138,7 +140,7 @@ VOLUME /tmp/.X11-unix
 
 COPY ./app /app
 
-ENV DISPLAY ":1"
+ENV DISPLAY ":9"
 
 EXPOSE 11311 8558 9901
 
