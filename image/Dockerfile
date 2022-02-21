@@ -134,7 +134,8 @@ RUN echo "source /usr/share/bash-completion/bash_completion" >> ~/.bashrc && \
     #bash -i -c "bash-it enable completion git" && \
     echo "source ~/.bashrc" >> ~/.bash_profile 
 
-RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc
+RUN echo "export PROMPT_COMMAND='history -a'" >> ~/.bashrc && \
+    echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc
 
 VOLUME /tmp/.X11-unix
 
