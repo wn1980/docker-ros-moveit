@@ -39,6 +39,7 @@ RUN apt-get install -y \
     ros-${ROS_DISTRO}-ros-controllers \
     ros-${ROS_DISTRO}-rqt \
     ros-${ROS_DISTRO}-rqt-common-plugins \
+    ros-${ROS_DISTRO}-joy \
     ros-${ROS_DISTRO}-urdf-tutorial \
     ros-${ROS_DISTRO}-catkin \
     python3-catkin-tools \
