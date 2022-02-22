@@ -30,6 +30,7 @@ RUN apt-get update --fix-missing && apt-get upgrade -y
 RUN apt-get install -y \
     #ros-${ROS_DISTRO}-desktop-full \
     ros-${ROS_DISTRO}-moveit \
+    ros-${ROS_DISTRO}-moveit-resources-prbt-moveit-config \
     ros-${ROS_DISTRO}-robot-state-publisher \
     ros-${ROS_DISTRO}-joint-state-publisher \
     ros-${ROS_DISTRO}-joint-state-publisher-gui \
